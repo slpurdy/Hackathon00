@@ -48,6 +48,8 @@ Responds to request from the frontend with data based on the endpoint they are c
 ## BONUS: 
 
 - Use [Real Data]https://data.memphistn.gov/ in your app
+- If a data source from the Memphis Data Hub give you .json, use that file in your server. 
+- If a data source is already hosted on an API, make an API call from your server and return results to your frontend app.
 
 # Now Fork this Repo, update this README below and happy coding!
 
