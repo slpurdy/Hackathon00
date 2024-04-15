@@ -16,15 +16,17 @@ A resource for community resources
 
 ### Frontend
 
-Well Designed Splash Section
+- Create a React App for the frontend of your app. It should have the following:
+
+1. Well Designed Splash Section
 
 - Logo, Video, Promo Image, etc
 
-About Section
+2. About Section
 
 - Tel us about the product, the problem you're solving, the team behind the project, the purpose
 
-Proof Of Concept
+3. Proof Of Concept
 
 - Demonstrate the unique selling point of your app.
 
@@ -33,10 +35,26 @@ Proof Of Concept
 
 ### Backend
 
-Express App
+- Create a Express Server for the backend of your app. It should have the following:
 
-Responds to request from the frontend
+Express library
+Cors library
+dotenv library
+
+Create at least 4 routes with at least 1 route for each HTTP Method (GET, POST, PUT, DELETE)
+
+Responds to request from the frontend with data based on the endpoint they are calling.
 
 ## BONUS: 
 
 - Use [Real Data]https://data.memphistn.gov/ in your app
+
+# Now Fork this Repo, update this README below and happy coding!
+
+###############################################
+
+# Project Title: 
+
+# Purpose: 
+
+# Team Members: 
