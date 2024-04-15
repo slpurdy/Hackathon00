@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 function App() {
     const [serverResponse, setServerResponse] = useState('')
-    const url = 'http://localhost:3001';
+    const url = process.env.REACT_APP_SERVER_URL;//'https://hackathon00-api.onrender.com/';
 
     function callGet() {
         axios.get(url)
