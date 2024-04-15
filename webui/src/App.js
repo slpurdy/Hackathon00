@@ -1,23 +1,48 @@
-import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
+import { useState } from 'react';
 
 function App() {
+    const [serverResponse, setServerResponse] = useState('')
+    const url = 'http://localhost:3001';
+
+    function callGet() {
+        axios.get(url)
+        .then((response) => {
+            setServerResponse(response.data);
+        });
+    }
+
+    function callPost() {
+        //http://localhost:3001/?lang=c++
+        let data = '?lang=c++';
+        axios.post(url + data)
+        .then((response)=>{
+            setServerResponse(response.data);
+        });
+    }
+
+    function callPut() {
+        let data = '?lang=python&index=0';
+        axios.put(url + data)
+        .then((response) => {
+            setServerResponse(response.data);
+        })
+    }
+    function callDelete() {
+        let data = '?index=1';
+        axios.delete(url + data)
+        .then((response) => {
+            setServerResponse(response.data);
+        });
+    }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {serverResponse}
+      <button onClick={callGet}>GET</button>
+      <button onClick={callPost}>POST</button>
+      <button onClick={callPut}>PUT</button>
+      <button onClick={callDelete}>DELETE</button>
     </div>
   );
 }

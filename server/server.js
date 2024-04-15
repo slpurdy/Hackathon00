@@ -11,7 +11,7 @@ app.use(cors());
 let langs = [];
 
 app.get('/', (req, res) => {
-    res.send('Hello User\n' + 'there are ' + langs.length + ' langs');
+    res.send('Hello User\n' + 'there are ' + langs.length + ' langs\n' + langs[0]);
 });
 
 app.post('/', (req, res) => {
@@ -24,7 +24,7 @@ app.post('/', (req, res) => {
 app.put('/', (req, res) => {
     if (req.query.index && req.query.lang) {
         langs[req.query.index] = req.query.lang;
-        res.send(lang[req.query.index]);
+        res.send(langs[req.query.index]);
     } else {
         res.send('No Update was made');
     }
@@ -32,8 +32,14 @@ app.put('/', (req, res) => {
     
 });
 
+//API stands for ????
 app.delete('/', (req, res) => {
-    
+    if (req.query.index) {
+        langs[req.query.index] = undefined;
+        res.send(req.query.index + ' was removed');
+    } else {
+        res.send('Nothing was removed. Send an index');
+    }
 });
 
 app.listen(3001, ()=>{
