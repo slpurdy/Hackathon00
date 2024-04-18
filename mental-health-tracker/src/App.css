@@ -1,0 +1,117 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+/* Container for centering content */
+.container {
+  max-width: 1200px; /* Adjust the maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+}
+
+/* Header styles */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Heading styles */
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+/* Paragraph styles */
+p {
+  margin-bottom: 20px;
+}
+
+/* Logo styles */
+.Logo {
+  text-align: center;
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.Logo img {
+  max-width: 200px; /* Adjust the size of the logo as needed */
+}
+
+/* Banner styles */
+.Banner {
+  width: 100%;
+  background-image: url('https://th.bing.com/th?id=OIP.ewfpJsjKq0HZ3M7bJCahmwHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2');
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  padding: 20px; /* Example padding */
+  box-sizing: border-box; /* Include padding in width calculation */
+  text-align: center; /* Center the content horizontally */
+  color: white; /* Example text color */
+}
+
+/* PromoImage styles */
+.PromoImage {
+  width: 100%;
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  padding: 20px; /* Example padding */
+  box-sizing: border-box; /* Include padding in width calculation */
+  text-align: center; /* Center the content horizontally */
+  color: white; /* Example text color */
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+/* MoodTracker styles */
+.mood-tracker {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.mood-input, .notes-input {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
