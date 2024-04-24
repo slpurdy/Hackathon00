@@ -8,6 +8,7 @@ const suggestedLinks = {
   // Add more activities and corresponding links here
 };
 
+
 function SplashSection() {
   const [mood, setMood] = useState('');
   const [emotions, setEmotions] = useState('');
